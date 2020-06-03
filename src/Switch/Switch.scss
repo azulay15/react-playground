@@ -1,0 +1,28 @@
+.Switch {
+    width: 60px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: green;
+
+
+    .handle {
+        float: left;
+        width: 20px;
+        height: 16px;
+        margin: 2px;
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    &--disabled {
+        @extend .Switch;
+        background-color: gray;
+
+        .handle {
+            float: right;
+        }
+    }
+    
+}
+
